@@ -22,6 +22,18 @@ if (d > 0) {
 
   return arr;
 };
-//function calculateTotalMortgage(percent, contribution, amount, countMonths) {
-  
-//}
+
+
+
+"use strict";
+let percent = 10, contribution = 0, amount = 50000, countMonths = 12;
+
+
+function calculateTotalMortgage(percent, contribution, amount, countMonths) {
+let percentMonth =  percent / 100 / 12;
+let body = amount - contribution;
+let pay = body * (percentMonth + (percentMonth / (((1 + percentMonth) ** countMonths) - 1)));
+let summCredit = pay * countMonths;
+
+return +summCredit.toFixed(2);
+};
