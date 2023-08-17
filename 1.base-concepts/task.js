@@ -23,9 +23,6 @@ if (d > 0) {
   return arr;
 };
 
-
-
-"use strict";
 let percent = 10, contribution = 0, amount = 50000, countMonths = 12;
 
 
