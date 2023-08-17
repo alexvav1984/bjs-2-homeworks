@@ -1,7 +1,4 @@
 "use strict";
-let a = 1, b = 2, c = 1;
-
-
 function solveEquation(a, b, c) {
 
 let arr = [];
@@ -25,9 +22,6 @@ if (d > 0) {
 
   return arr;
 };
-
-console.log(solveEquation(a, b, c));
-
 //function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   
 //}
