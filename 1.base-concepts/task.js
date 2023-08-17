@@ -23,9 +23,6 @@ if (d > 0) {
   return arr;
 };
 
-let percent = 10, contribution = 0, amount = 50000, countMonths = 12;
-
-
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
 let percentMonth =  percent / 100 / 12;
 let body = amount - contribution;
