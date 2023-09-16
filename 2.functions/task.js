@@ -14,15 +14,37 @@ function getArrayParams(...arr) {
 }
 
 function summElementsWorker(...arr) {
-
+    let min = arr[0], max = arr[0], sum = 0;
+    for (i = 0; i < arr.length; i++){
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+        sum += arr[i];
+    }
+    return sum;
 }
 
-function differenceMaxMinWorker(...arr) {
-
+function differenceMaxMinWorker(...arr){
+    
+    return Math.max(...arr) - Math.min(...arr); 
 }
 
-function differenceEvenOddWorker(...arr) {
+function differenceEvenOddWorker(...arr){
+    let sumEvenElement = 0, sumOddElement = 0;
+    for (i =0; i<arr.length; i++){
+        if (arr[i] % 2 ==0){
+            sumEvenElement += arr[i];
+        }
+        else{
+            sumOddElement += arr[i];
+        }
+    }
+    
 
+    return sumEvenElement-sumOddElement;
 }
 
 function averageEvenElementsWorker(...arr) {
